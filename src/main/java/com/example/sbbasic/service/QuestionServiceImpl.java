@@ -61,4 +61,14 @@ public class QuestionServiceImpl implements QuestionService{
 		}
 	}
 
+	@Override
+	public void create(String title, String content) {
+		Question question = Question.builder()
+					.title(title)
+					.content(content)
+					.build();
+		this.questionRepository.save(question);
+		
+	}
+
 }

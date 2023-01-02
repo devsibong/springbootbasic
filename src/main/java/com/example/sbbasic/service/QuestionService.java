@@ -13,4 +13,6 @@ public interface QuestionService {
 	List<Question> getList();
 	
 	Question getQuestion(Integer id);
+	
+	void create(String title, String content);
 }
