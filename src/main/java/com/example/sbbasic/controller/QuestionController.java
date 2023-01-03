@@ -56,7 +56,7 @@ public class QuestionController {
 	}
 	
 	@GetMapping("/register")
-	public String registerGet() {
+	public String registerGet(QuestionDTO questionDTO) {
 		return "question_form";
 	}
 	
@@ -64,9 +64,9 @@ public class QuestionController {
 	public String registerPost(@Valid QuestionDTO questionDTO, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
 		
 		if(bindingResult.hasErrors()) {
-			redirectAttributes.addFlashAttribute("errors", bindingResult.getAllErrors());
+//			redirectAttributes.addFlashAttribute("errors", bindingResult.getAllErrors());
 			
-			return "redirect:/question/register";
+			return "question_form";
 		}
 
 		this.questionService.register(questionDTO);

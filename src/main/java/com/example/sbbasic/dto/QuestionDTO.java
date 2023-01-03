@@ -21,11 +21,11 @@ public class QuestionDTO {
 	
 	private int id;
 	
-	@NotEmpty
+	@NotEmpty(message="제목은 필수 항목입니다.")
 	@Size(max=200)
 	private String title;
 	
-	@NotEmpty
+	@NotEmpty(message="내용은 필수 항목입니다.")
 	private String content;
 	
 	private LocalDateTime regDate;
