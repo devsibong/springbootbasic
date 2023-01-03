@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 import com.example.sbbasic.domain.Answer;
 import com.example.sbbasic.domain.Question;
 import com.example.sbbasic.dto.AnswerDTO;
-import com.example.sbbasic.dto.QuestionDTO;
 import com.example.sbbasic.repository.AnswerRepository;
 
 import lombok.RequiredArgsConstructor;

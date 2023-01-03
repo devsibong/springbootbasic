@@ -1,6 +1,6 @@
 package com.example.sbbasic.service;
 
-import java.util.List;
+import org.springframework.data.domain.Page;
 
 import com.example.sbbasic.domain.Question;
 import com.example.sbbasic.dto.QuestionDTO;
@@ -10,6 +10,7 @@ public interface QuestionService {
 	
 	QuestionDTO readOne(Integer id);
 	
-	List<QuestionDTO> getList();
-		
+//	List<QuestionDTO> getList();
+	
+	Page<Question> getList(int page);
 }

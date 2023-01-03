@@ -1,19 +1,14 @@
 package com.example.sbbasic.controller;
 
-import javax.validation.constraints.NotEmpty;
-
 import org.apache.groovy.parser.antlr4.util.StringUtils;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.sbbasic.service.AnswerService;
-import com.example.sbbasic.service.QuestionService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -24,7 +19,6 @@ import lombok.RequiredArgsConstructor;
 @Validated
 public class AnswerController {
 
-    private final QuestionService questionService;
     
     private final AnswerService answerService;
 
