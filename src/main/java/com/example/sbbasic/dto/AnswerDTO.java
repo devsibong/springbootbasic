@@ -2,6 +2,8 @@ package com.example.sbbasic.dto;
 
 import java.time.LocalDateTime;
 
+import javax.validation.constraints.NotEmpty;
+
 import com.example.sbbasic.domain.Question;
 
 import lombok.AllArgsConstructor;
@@ -17,6 +19,7 @@ public class AnswerDTO {
 	
 	private int id;
 	
+	@NotEmpty
 	private String content;
 	
 	private Question question;

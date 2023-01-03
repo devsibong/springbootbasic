@@ -51,7 +51,6 @@ class CRUDTest {
 					.title("Sample Title......")
 					.content("Sample Content........")
 					.build();
-		int id = questionService.register(questionDTO);
 		
 	}
 	
