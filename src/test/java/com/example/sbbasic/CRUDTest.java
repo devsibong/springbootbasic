@@ -32,6 +32,8 @@ class CRUDTest {
 				.title("테스트 제목입니다..." +i)
 				.content("테스트 본문입니다...."+i)
 				.build();
+
+		
 		
 		Question result = questionRepository.save(question);
 		log.info("ID: " + result.getId());
